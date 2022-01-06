@@ -1,0 +1,22 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.21"
+ktlint = "0.48.1"
+maven-publish = "0.25.3"
+dokka = "1.9.10"
+spotless = "6.23.3"
+kotlin-poet = "1.15.3"
+okio = "3.7.0"
+
+[libraries]
+gradle-plugin-android-api = { module = "com.android.tools.build:gradle-api", version.ref = "agp" }
+kotlin-compiler-embeddable = { module = "org.jetbrains.kotlin:kotlin-compiler-embeddable", version.ref = "kotlin" }
+kotlin-poet = { module = "com.squareup:kotlinpoet", version.ref = "kotlin-poet" }
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
