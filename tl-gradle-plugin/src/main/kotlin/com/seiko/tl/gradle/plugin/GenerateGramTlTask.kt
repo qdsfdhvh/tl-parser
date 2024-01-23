@@ -43,6 +43,11 @@ abstract class GenerateGramTlTask : DefaultTask() {
             // remove old code files
             codeDir.asFile.get().deleteRecursively()
 
+            if (!rootProtoDir.exists()) {
+                logger.info("Gram TL dir not exit: $rootProtoDir")
+                return
+            }
+
             val context = GenerateContext(
                 packageName = packageName.get(),
                 prefix = prefix.get(),
