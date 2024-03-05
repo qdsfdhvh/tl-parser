@@ -24,7 +24,7 @@ spotless {
 
 allprojects {
     group = "io.github.qdsfdhvh"
-    version = "0.0.3"
+    version = "0.0.4"
 
     plugins.withId("com.vanniktech.maven.publish.base") {
         mavenPublishing {
