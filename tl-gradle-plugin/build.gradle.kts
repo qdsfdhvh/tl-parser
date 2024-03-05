@@ -11,6 +11,7 @@ dependencies {
     compileOnly(libs.gradle.plugin.android.api)
     implementation(libs.kotlin.poet)
     implementation(project(":tl-parser"))
+    testImplementation(kotlin("test"))
 }
 
 gradlePlugin {

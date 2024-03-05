@@ -10,7 +10,7 @@ internal fun generateClassName(prefix: String, name: String): String {
         }
         val array = name.split('.')
         if (array.size < 2) {
-            append(name)
+            append(name.capitalized())
         } else {
             append(array[0])
             append('_')

@@ -417,5 +417,3 @@ private fun ValueToken.defaultValue(context: GenerateContext): String {
         is ValueType.CLASS -> "${generateClassName(context.prefix, type.name)}()"
     }
 }
-
-
